@@ -1,0 +1,19 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: set-apikey-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: Authenticate to the demo's APISIX as the researcher agent
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  valueType: plain
+  messageHeader:
+    messageName: request
+    action: set            # overwrite anything the caller sent
+    headerName: apikey     # APISIX key-auth header
+    value: <RESEARCHER_KEY>   # contents of .secrets/consumer-researcher; never commit

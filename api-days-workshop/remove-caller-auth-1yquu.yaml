@@ -1,0 +1,17 @@
+kind: Remove
+apiVersion: api.ibm.com/v1
+metadata:
+  name: remove-caller-auth-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: Keep the caller's own credentials from reaching the demo
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  message:
+    messageName: request
+    headers:
+      - Authorization

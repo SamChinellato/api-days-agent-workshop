@@ -1,0 +1,12 @@
+kind: Cache
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Cache-wjbus
+  namespace: api-days-workshop
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  execute: []

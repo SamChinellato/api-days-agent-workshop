@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: document-tools-policy
+  namespace: api-days-workshop
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: api-days-workshop:invoke-document-tools-policy:1.0
+    - $ref: api-days-workshop:Cache-wjbus:1.0
+  monitoring:
+    $ref: api-days-workshop:telemetry-document-tools-policy:1.0

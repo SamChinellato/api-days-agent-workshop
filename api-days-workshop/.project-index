@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "id": "2c5a63cb-b4b9-40a2-b19d-43ceb757abfe:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/Cache-wjbus.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792970328676,
+      "schemaVersion": 1,
+      "kind": "Cache",
+      "name": "Cache-wjbus",
+      "namespace": "api-days-workshop",
+      "version": "1.0",
+      "contentHash": "b24ec18c81a1270a"
+    },
+    {
+      "id": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/document-tools-policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792970329375,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "document-tools-policy",
+      "namespace": "api-days-workshop",
+      "version": "1.0",
+      "contentHash": "0cf5b913b8de07d9"
+    },
+    {
+      "id": "de1831ae-332b-4ce1-9e5a-6c22c2a09a3f:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/invoke-document-tools-policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792970250475,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "invoke-document-tools-policy",
+      "namespace": "api-days-workshop",
+      "version": "1.0",
+      "contentHash": "3179757c9021aed8"
+    },
+    {
+      "id": "fd75f887-34d9-4200-a1dd-0494d5f85fac:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/telemetry-document-tools-policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792970251668,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-document-tools-policy",
+      "namespace": "api-days-workshop",
+      "version": "1.0",
+      "contentHash": "5948b6054d129682"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a06f3849-7381-4486-a7ea-45a685a4f139",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
+      "targetNodeId": "de1831ae-332b-4ce1-9e5a-6c22c2a09a3f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:invoke-document-tools-policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792970252280,
+      "lastValidated": 1792970252280
+    },
+    {
+      "id": "c6b936a0-f7e6-414f-aacb-047b97c5a6da",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
+      "targetNodeId": "fd75f887-34d9-4200-a1dd-0494d5f85fac:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:telemetry-document-tools-policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792970252279,
+      "lastValidated": 1792970252279
+    },
+    {
+      "id": "e3c6a6fc-270f-44a1-9454-d1c3f3e24170",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
+      "targetNodeId": "2c5a63cb-b4b9-40a2-b19d-43ceb757abfe:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:Cache-wjbus:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792970329378,
+      "lastValidated": 1792970329378
+    }
+  ]
+}

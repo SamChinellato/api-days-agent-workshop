@@ -1,0 +1,11 @@
+kind: Telemetry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: telemetry-document-tools-policy
+  namespace: api-days-workshop
+  version: '1.0'
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+spec: {}

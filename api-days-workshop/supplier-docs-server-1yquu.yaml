@@ -1,0 +1,20 @@
+kind: MCPServer
+apiVersion: api.ibm.com/v1
+metadata:
+  name: supplier-docs-server-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    origin: mcp-mcp
+spec:
+  title: supplier-docs
+  protocolVersion: V2025_11_25
+  quota:
+    $ref: api-days-workshop:quota-1yquu:1.0.0
+  policy-sequence:
+    - $ref: api-days-workshop:policy-sequence-1yquu:1.0.0
+  capabilities:
+    tools:
+      - $ref: api-days-workshop:supplier-docs-tool-1yquu:1.0.0

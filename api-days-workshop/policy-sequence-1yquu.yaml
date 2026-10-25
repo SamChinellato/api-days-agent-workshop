@@ -1,0 +1,16 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: policy-sequence-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: api-days-workshop:mcp-invoke-1yquu:1.0.0
+  monitoring:
+    $ref: api-days-workshop:telemetry-1yquu:1.0.0

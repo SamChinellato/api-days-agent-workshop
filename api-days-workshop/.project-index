@@ -1,6 +1,20 @@
 {
   "nodes": [
     {
+      "id": "294cffdb-2212-4a6c-8f03-f8355cb8c5e2:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/supplier-docs-server-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971745792,
+      "schemaVersion": 1,
+      "kind": "MCPServer",
+      "name": "supplier-docs-server-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "9effe8995efb8717"
+    },
+    {
       "id": "2c5a63cb-b4b9-40a2-b19d-43ceb757abfe:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/Cache-wjbus.yml",
@@ -13,6 +27,34 @@
       "namespace": "api-days-workshop",
       "version": "1.0",
       "contentHash": "b24ec18c81a1270a"
+    },
+    {
+      "id": "4a1938d1-5ad6-4c14-9725-5e4e72ca85e3:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/mcp-invoke-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971742391,
+      "schemaVersion": 1,
+      "kind": "MCPInvoke",
+      "name": "mcp-invoke-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "674cbd53ab2c37ac"
+    },
+    {
+      "id": "9593fad5-e0bc-40a1-be3b-08057bcd48d2:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/supplier-docs-tool-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971745174,
+      "schemaVersion": 1,
+      "kind": "MCPTools",
+      "name": "supplier-docs-tool-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "c929a4a98c8c9228"
     },
     {
       "id": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
@@ -29,6 +71,43 @@
       "contentHash": "0cf5b913b8de07d9"
     },
     {
+      "id": "a47e319a-9e7f-4dc9-b4d9-9e85e5ad8e7f:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792971532555,
+      "schemaVersion": 1
+    },
+    {
+      "id": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/policy-sequence-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971743855,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "policy-sequence-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "040bb89fc5f2e7fb"
+    },
+    {
+      "id": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/quota-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971744465,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "quota-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "e189130d9236fd40"
+    },
+    {
       "id": "de1831ae-332b-4ce1-9e5a-6c22c2a09a3f:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/invoke-document-tools-policy.yml",
@@ -41,6 +120,20 @@
       "namespace": "api-days-workshop",
       "version": "1.0",
       "contentHash": "3179757c9021aed8"
+    },
+    {
+      "id": "e9d47ca0-1678-4106-a450-4b030493153f:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/telemetry-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792971743228,
+      "schemaVersion": 1,
+      "kind": "Telemetry",
+      "name": "telemetry-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "3bd3275f0bd01f54"
     },
     {
       "id": "fd75f887-34d9-4200-a1dd-0494d5f85fac:0",
@@ -59,6 +152,42 @@
   ],
   "edges": [
     {
+      "id": "212eb0b0-75ad-4dde-acb4-51441a5fe22d",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
+      "targetNodeId": "4a1938d1-5ad6-4c14-9725-5e4e72ca85e3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:mcp-invoke-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792971743857,
+      "lastValidated": 1792971743857
+    },
+    {
+      "id": "86a27043-5b3c-4260-958d-f8b3241164ad",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
+      "targetNodeId": "e9d47ca0-1678-4106-a450-4b030493153f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:telemetry-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792971743856,
+      "lastValidated": 1792971743856
+    },
+    {
+      "id": "880288f0-0fd7-4dcf-86ca-d075de10e2fa",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "294cffdb-2212-4a6c-8f03-f8355cb8c5e2:0",
+      "targetNodeId": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:policy-sequence-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792971745795,
+      "lastValidated": 1792971745795
+    },
+    {
       "id": "a06f3849-7381-4486-a7ea-45a685a4f139",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
@@ -69,6 +198,18 @@
       "isValid": true,
       "createdAt": 1792970252280,
       "lastValidated": 1792970252280
+    },
+    {
+      "id": "a11d587e-7d35-491d-a3ab-96d0e136c30b",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "294cffdb-2212-4a6c-8f03-f8355cb8c5e2:0",
+      "targetNodeId": "9593fad5-e0bc-40a1-be3b-08057bcd48d2:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:supplier-docs-tool-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792971745795,
+      "lastValidated": 1792971745795
     },
     {
       "id": "c6b936a0-f7e6-414f-aacb-047b97c5a6da",
@@ -93,6 +234,18 @@
       "isValid": true,
       "createdAt": 1792970329378,
       "lastValidated": 1792970329378
+    },
+    {
+      "id": "e8b0656f-ae5a-4fb1-8433-cd834eb4c604",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "294cffdb-2212-4a6c-8f03-f8355cb8c5e2:0",
+      "targetNodeId": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:quota-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792971745795,
+      "lastValidated": 1792971745795
     }
   ]
 }

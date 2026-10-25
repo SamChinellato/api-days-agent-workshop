@@ -1,0 +1,31 @@
+kind: MCPTools
+apiVersion: api.ibm.com/v1
+metadata:
+  name: supplier-docs-tool-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels: {}
+spec:
+  tools:
+    - name: list_documents
+      title: list_documents
+      description: List the supplier review documents, each with its id, supplier name
+        and a one-line performance summary.
+      inputSchema:
+        properties: {}
+        type: object
+        title: list_documentsArguments
+    - name: read_document
+      title: read_document
+      description: Read one supplier review document by its id, e.g. supplier-01.
+      inputSchema:
+        properties:
+          id:
+            title: Id
+            type: string
+        required:
+          - id
+        type: object
+        title: read_documentArguments

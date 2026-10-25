@@ -1,0 +1,26 @@
+kind: MCPInvoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: mcp-invoke-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  input: request
+  endpoint:
+    httpSse:
+      serverUrl:
+        plain:
+          value: https://aigw-gateway.apps.itz-0x5jw5.infra01-lb.syd05.techzone.ibm.com/mcp/docs
+      timeout: 30
+      tlsClientProfile: sample-tls-client-profile:1.0.0
+    primitive:
+      tool:
+        name:
+          plain:
+            value: tool_name
+        output: response

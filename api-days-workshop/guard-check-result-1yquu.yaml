@@ -5,17 +5,16 @@ metadata:
   namespace: api-days-workshop
   version: 1.0.0
   tags: []
-  domain: mcp
-  description: "MOCK: ask the guard about a tool result before the agent sees it"
+  description: 'MOCK: ask the guard about a tool result before the agent sees it'
   labels:
     gatewayTypes:
       - nano
+  domain: mcp
 spec:
   actions:
     inspect:
       $ref: api-days-workshop:guard-inspect-1yquu:1.0.0
   source: |
-    -- MOCK, for discussion: not deployed. Runs after MCPInvoke.
     --
     -- A shim over lua-modules/guard-lib/guard.lua (module "guard-lib"); see
     -- guard-check-call-1yquu for how the module is mounted and what is

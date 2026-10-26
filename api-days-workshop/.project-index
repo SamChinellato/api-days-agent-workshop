@@ -29,6 +29,48 @@
       "contentHash": "b24ec18c81a1270a"
     },
     {
+      "id": "2d170529-61b8-4833-8005-a3f6fc6d52ce:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/cache-docs-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792980978057,
+      "schemaVersion": 1,
+      "kind": "Cache",
+      "name": "cache-docs-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "89877fe0809e533c"
+    },
+    {
+      "id": "3afcbd82-0f6a-4169-8d96-9b47a2e2cbd1:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guard-inspect-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792980978060,
+      "schemaVersion": 1,
+      "kind": "Invoke",
+      "name": "guard-inspect-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "eb41590ce1faff8b"
+    },
+    {
+      "id": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/policy-sequence-guarded-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792980978059,
+      "schemaVersion": 1,
+      "kind": "FreeFlowPolicySequence",
+      "name": "policy-sequence-guarded-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "ad650f61b780d262"
+    },
+    {
       "id": "4a1938d1-5ad6-4c14-9725-5e4e72ca85e3:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/mcp-invoke-1yquu.yaml",
@@ -41,6 +83,34 @@
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "contentHash": "674cbd53ab2c37ac"
+    },
+    {
+      "id": "609d05c8-0e32-420e-a2d9-05ffc89ecca5:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/set-apikey-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792972534435,
+      "schemaVersion": 1,
+      "kind": "Set",
+      "name": "set-apikey-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "15a3b52fc2d22a06"
+    },
+    {
+      "id": "8de3b463-88cb-4c75-8eaa-56f93926263a:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/retry-docs-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792980978071,
+      "schemaVersion": 1,
+      "kind": "Retry",
+      "name": "retry-docs-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "ab87b0ac64fff743"
     },
     {
       "id": "9593fad5-e0bc-40a1-be3b-08057bcd48d2:0",
@@ -57,6 +127,20 @@
       "contentHash": "c929a4a98c8c9228"
     },
     {
+      "id": "99447988-7367-4b42-8a25-0ab3559058ac:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guard-check-result-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792984605901,
+      "schemaVersion": 1,
+      "kind": "LuaScript",
+      "name": "guard-check-result-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "660abac8e948a6f9"
+    },
+    {
       "id": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/document-tools-policy.yml",
@@ -71,6 +155,20 @@
       "contentHash": "0cf5b913b8de07d9"
     },
     {
+      "id": "9cdc40fb-8ec6-4372-afa1-8e22d4c4c9e9:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guard-check-call-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792984570238,
+      "schemaVersion": 1,
+      "kind": "LuaScript",
+      "name": "guard-check-call-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "67a2647ae4e06c04"
+    },
+    {
       "id": "a47e319a-9e7f-4dc9-b4d9-9e85e5ad8e7f:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/.project-index",
@@ -80,18 +178,46 @@
       "schemaVersion": 1
     },
     {
+      "id": "b89fefc2-b712-4481-b51e-2dbd5bb632bb:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/remove-caller-auth-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792973189243,
+      "schemaVersion": 1,
+      "kind": "Remove",
+      "name": "remove-caller-auth-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "2fb1aba0c11edd6b"
+    },
+    {
+      "id": "bf9b2696-69e0-408d-b597-d5df771b71a9:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guard-deny-1yquu.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792980978060,
+      "schemaVersion": 1,
+      "kind": "Throw",
+      "name": "guard-deny-1yquu",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "contentHash": "cf49ae2c5b38319b"
+    },
+    {
       "id": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/policy-sequence-1yquu.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1792971743855,
+      "lastIndexed": 1792973884659,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "policy-sequence-1yquu",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
-      "contentHash": "040bb89fc5f2e7fb"
+      "contentHash": "3b30ee2e97b5e351"
     },
     {
       "id": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
@@ -164,6 +290,78 @@
       "lastValidated": 1792971743857
     },
     {
+      "id": "224f4ace-2a4f-497e-952f-ec60f7422dfb",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "e9d47ca0-1678-4106-a450-4b030493153f:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:telemetry-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792973884667
+    },
+    {
+      "id": "2f26a3ee-2b56-4be3-a441-1916a362e4cf",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "9cdc40fb-8ec6-4372-afa1-8e22d4c4c9e9:0",
+      "targetNodeId": "3afcbd82-0f6a-4169-8d96-9b47a2e2cbd1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-inspect-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884668,
+      "lastValidated": 1792973884696
+    },
+    {
+      "id": "3410bee8-a7fa-41c8-b2a6-52943ce78a53",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "8de3b463-88cb-4c75-8eaa-56f93926263a:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:retry-docs-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792973884697
+    },
+    {
+      "id": "3dd38221-b3c1-4c7d-88e4-5a2c93243fd3",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "99447988-7367-4b42-8a25-0ab3559058ac:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-check-result-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792984605907
+    },
+    {
+      "id": "5edf125f-1eac-47d4-aeab-75d3c26688b0",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "9cdc40fb-8ec6-4372-afa1-8e22d4c4c9e9:0",
+      "targetNodeId": "bf9b2696-69e0-408d-b597-d5df771b71a9:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-deny-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884668,
+      "lastValidated": 1792973884668
+    },
+    {
+      "id": "7d10cef9-ae46-4a0d-91e0-2347b6e1409c",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "9cdc40fb-8ec6-4372-afa1-8e22d4c4c9e9:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-check-call-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792984570244
+    },
+    {
       "id": "86a27043-5b3c-4260-958d-f8b3241164ad",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "c4cd2b5a-bdf5-4e54-9eec-9f5b2559698d:0",
@@ -176,6 +374,18 @@
       "lastValidated": 1792971743856
     },
     {
+      "id": "86bee24b-998a-41c1-889e-191c79a37b6b",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "609d05c8-0e32-420e-a2d9-05ffc89ecca5:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:set-apikey-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792973884667
+    },
+    {
       "id": "880288f0-0fd7-4dcf-86ca-d075de10e2fa",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "294cffdb-2212-4a6c-8f03-f8355cb8c5e2:0",
@@ -185,7 +395,19 @@
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1792971745795,
-      "lastValidated": 1792971745795
+      "lastValidated": 1792972223113
+    },
+    {
+      "id": "95f9c1cd-28fa-45a4-aa7f-cdad4fcd834b",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "492f921a-e84b-458a-8847-93aaa7b262a1:0",
+      "targetNodeId": "b89fefc2-b712-4481-b51e-2dbd5bb632bb:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:remove-caller-auth-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884668,
+      "lastValidated": 1792973884668
     },
     {
       "id": "a06f3849-7381-4486-a7ea-45a685a4f139",
@@ -212,6 +434,18 @@
       "lastValidated": 1792971745795
     },
     {
+      "id": "c54338c0-4013-4b0a-8300-278c37f25043",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "8de3b463-88cb-4c75-8eaa-56f93926263a:0",
+      "targetNodeId": "2d170529-61b8-4833-8005-a3f6fc6d52ce:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:cache-docs-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884693,
+      "lastValidated": 1792973884693
+    },
+    {
       "id": "c6b936a0-f7e6-414f-aacb-047b97c5a6da",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "9a4df8ec-f1b2-489b-ba88-e9b8c921b207:0",
@@ -222,6 +456,30 @@
       "isValid": true,
       "createdAt": 1792970252279,
       "lastValidated": 1792970252279
+    },
+    {
+      "id": "c9f3f2f5-60a3-41c1-83e9-1997f7d666e2",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "2d170529-61b8-4833-8005-a3f6fc6d52ce:0",
+      "targetNodeId": "4a1938d1-5ad6-4c14-9725-5e4e72ca85e3:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:mcp-invoke-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884667,
+      "lastValidated": 1792973884667
+    },
+    {
+      "id": "d170bf0d-2860-4f15-ada6-b2a6bd4bf25b",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "99447988-7367-4b42-8a25-0ab3559058ac:0",
+      "targetNodeId": "3afcbd82-0f6a-4169-8d96-9b47a2e2cbd1:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-inspect-1yquu:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792973884668,
+      "lastValidated": 1792973884698
     },
     {
       "id": "e3c6a6fc-270f-44a1-9454-d1c3f3e24170",

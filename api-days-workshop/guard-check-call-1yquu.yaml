@@ -5,11 +5,11 @@ metadata:
   namespace: api-days-workshop
   version: 1.0.0
   tags: []
-  domain: mcp
-  description: "MOCK: ask the guard about a tool call before it is made"
+  description: 'MOCK: ask the guard about a tool call before it is made'
   labels:
     gatewayTypes:
       - nano
+  domain: mcp
 spec:
   actions:
     inspect:
@@ -17,18 +17,10 @@ spec:
     deny:
       $ref: api-days-workshop:guard-deny-1yquu:1.0.0
   source: |
-    -- MOCK, for discussion: not deployed.
-    --
     -- A shim: the logic lives in git, in lua-modules/guard-lib/guard.lua,
     -- mounted into the runtime from a ConfigMap as the module "guard-lib"
     -- (see lua-modules/runtime-modules-patch.yaml). Changing the guard client
     -- then means a commit to that file, not an edit in API Studio.
-    --
-    -- This policy still owns the actions the module may run: "inspect" (Invoke
-    -- to the guard) and "deny" (Throw 403), mapped above.
-    --
-    -- Unverified: the require() name. The runtime loads every .lua file in a
-    -- module's folder; whether this one is "guard-lib/guard", "guard-lib.guard"
-    -- or just "guard-lib" isn't documented.
+
     local guard = require("guard-lib/guard")
     guard.check_call(context, { agent = "researcher", server = "docs" })

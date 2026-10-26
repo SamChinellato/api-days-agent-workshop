@@ -5,15 +5,15 @@ metadata:
   namespace: api-days-workshop
   version: 1.0.0
   tags: []
-  domain: mcp
   description: Authenticate to the demo's APISIX as the researcher agent
   labels:
     gatewayTypes:
       - nano
+  domain: mcp
 spec:
   valueType: plain
   messageHeader:
     messageName: request
-    action: set            # overwrite anything the caller sent
-    headerName: apikey     # APISIX key-auth header
-    value: <RESEARCHER_KEY>   # contents of .secrets/consumer-researcher; never commit
+    action: set
+    headerName: apikey
+    value: <RESEARCHER_KEY>

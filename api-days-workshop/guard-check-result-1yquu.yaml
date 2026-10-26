@@ -1,0 +1,42 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-check-result-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "MOCK: ask the guard about a tool result before the agent sees it"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  actions:
+    inspect:
+      $ref: api-days-workshop:guard-inspect-1yquu:1.0.0
+  source: |
+    -- MOCK, for discussion: not deployed. Runs after MCPInvoke.
+    local res    = context:get_message("response")
+    local result = json.decode(tostring(res.body))        -- JSON-RPC result
+
+    local check = context:create_message("guard_request")
+    check.headers:set("content-type", "application/json")
+    check.headers:set("apikey", context:get("guard.apikey"))
+    check.body = json.encode({
+      stage   = "tool_result",                            -- injection classifier
+      agent   = "researcher",
+      content = result.result.content,
+    })
+    context:run_action("inspect")
+
+    local verdict = json.decode(tostring(context:get_message("guard_response").body))
+    if verdict.verdict == "block" then
+      -- Quarantine rather than fail: the agent gets a tool error it can reason
+      -- about, exactly as the guard's MCP proxy answers today.
+      result.result = {
+        isError = true,
+        content = { { type = "text",
+          text = "Content quarantined by policy (decision " .. verdict.decision_id .. ")" } },
+      }
+      res.body = json.encode(result)
+    end

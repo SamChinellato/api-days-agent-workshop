@@ -1,0 +1,45 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-check-call-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "MOCK: ask the guard about a tool call before it is made"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  actions:
+    inspect:
+      $ref: api-days-workshop:guard-inspect-1yquu:1.0.0
+    deny:
+      $ref: api-days-workshop:guard-deny-1yquu:1.0.0
+  source: |
+    -- MOCK, for discussion: not deployed. The context methods used here
+    -- (get_message, create_message, run_action, set) and the json/console
+    -- modules exist in the Nano runtime; their exact signatures are unverified.
+    local req  = context:get_message("request")
+    local call = json.decode(tostring(req.body))          -- JSON-RPC tools/call
+
+    -- Same question the guard's MCP proxy asks today (allowlist, argument rules).
+    local check = context:create_message("guard_request")
+    check.headers:set("content-type", "application/json")
+    check.headers:set("apikey", context:get("guard.apikey"))  -- e.g. a distributed variable
+    check.body = json.encode({
+      stage     = "tool_call",
+      agent     = "researcher",
+      tool      = "docs." .. call.params.name,
+      arguments = call.params.arguments,
+      trace     = req.headers:get("traceparent"),
+    })
+    context:run_action("inspect")                         -- Invoke → guard /v1/inspect
+
+    local verdict = json.decode(tostring(context:get_message("guard_response").body))
+    context:set("guard.decision_id", verdict.decision_id)
+    if verdict.verdict == "block" then
+      context:set("guard.reason", verdict.reason)
+      console.warn("guard blocked %s: %s", call.params.name, verdict.reason)
+      context:run_action("deny")                          -- Throw 403
+    end

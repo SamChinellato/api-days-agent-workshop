@@ -1,0 +1,21 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: policy-sequence-guarded-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "MOCK target design: the guard called from Interact Gateway. Not attached to any MCP server."
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: api-days-workshop:remove-caller-auth-1yquu:1.0.0
+    - $ref: api-days-workshop:set-apikey-1yquu:1.0.0
+    - $ref: api-days-workshop:guard-check-call-1yquu:1.0.0
+    - $ref: api-days-workshop:retry-docs-1yquu:1.0.0
+    - $ref: api-days-workshop:guard-check-result-1yquu:1.0.0
+  monitoring:
+    $ref: api-days-workshop:telemetry-1yquu:1.0.0

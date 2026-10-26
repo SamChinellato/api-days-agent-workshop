@@ -1,0 +1,18 @@
+kind: Throw
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-deny-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "MOCK: refuse a tool call the guard blocked"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  error:
+    CustomError:
+      status: 403
+      messageType: variables
+      message: guard.reason

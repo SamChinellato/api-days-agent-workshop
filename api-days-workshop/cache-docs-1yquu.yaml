@@ -1,0 +1,29 @@
+kind: Cache
+apiVersion: api.ibm.com/v1
+metadata:
+  name: cache-docs-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "Cache read-only document results for 60 s, keyed by tool and arguments"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  # Key on what was asked, not the JSON-RPC id (which differs on every call).
+  inputs:
+    - custom:
+        expression: >-
+          $body('request').params.name & ':' &
+          $string($body('request').params.arguments)
+  outputs:
+    - message:
+        name: response
+  expire:
+    static:
+      seconds: 60
+  scope:
+    narrowScope: {}   # per subscription; wideScope would share across callers
+  execute:
+    - $ref: api-days-workshop:mcp-invoke-1yquu:1.0.0

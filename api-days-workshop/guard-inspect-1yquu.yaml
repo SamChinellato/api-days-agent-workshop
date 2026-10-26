@@ -1,0 +1,23 @@
+kind: Invoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-inspect-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "MOCK: call the demo guard's inspect API (endpoint does not exist yet)"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  input: guard_request     # message built by the Lua script
+  output: guard_response   # read back by the Lua script
+  endpoint:
+    http:
+      target:
+        # Hypothetical: the guard would need an /inspect route exposed through
+        # APISIX (key-auth) for this to work.
+        url: https://aigw-gateway.apps.itz-0x5jw5.infra01-lb.syd05.techzone.ibm.com/guard/v1/inspect
+        timeout: 5
+        tlsClientProfile: sample-tls-client-profile:1.0.0

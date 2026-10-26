@@ -1,0 +1,22 @@
+kind: Retry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: retry-docs-1yquu
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  description: "Retry transient failures reaching the demo gateway"
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  maxRetries: 2
+  delay: 250
+  # Only network-level failures. Not ServiceUnavailableError: a 503 from the
+  # demo is usually the kill switch, and retrying it would just hammer it.
+  retryOn:
+    - ConnectionError
+    - TimeoutError
+  execute:
+    - $ref: api-days-workshop:cache-docs-1yquu:1.0.0

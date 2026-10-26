@@ -1,0 +1,27 @@
+# Lua modules for the Interact Gateway (Nano) runtime. MOCK, for discussion.
+#
+# Builds the ConfigMap guard-lib-lua from guard-lib/guard.lua, so the .lua
+# file in git is the only copy of the code. Apply it to the cluster where
+# Interact Gateway runs (tok04):
+#
+#   oc apply -k lua-modules/
+#
+# Then point the Runtime at it: see runtime-modules-patch.yaml.
+#
+# This could equally be an Argo CD Application following this folder, so a
+# merged change to guard.lua reaches the gateway without touching API Studio.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: idig-system
+
+generatorOptions:
+  # A stable name: the Runtime refers to the ConfigMap by name, and a hash
+  # suffix would break that reference on every change.
+  disableNameSuffixHash: true
+  labels:
+    app.kubernetes.io/part-of: api-days-workshop
+
+configMapGenerator:
+  - name: guard-lib-lua
+    files:
+      - guard-lib/guard.lua

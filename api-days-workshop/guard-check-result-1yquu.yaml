@@ -16,27 +16,9 @@ spec:
       $ref: api-days-workshop:guard-inspect-1yquu:1.0.0
   source: |
     -- MOCK, for discussion: not deployed. Runs after MCPInvoke.
-    local res    = context:get_message("response")
-    local result = json.decode(tostring(res.body))        -- JSON-RPC result
-
-    local check = context:create_message("guard_request")
-    check.headers:set("content-type", "application/json")
-    check.headers:set("apikey", context:get("guard.apikey"))
-    check.body = json.encode({
-      stage   = "tool_result",                            -- injection classifier
-      agent   = "researcher",
-      content = result.result.content,
-    })
-    context:run_action("inspect")
-
-    local verdict = json.decode(tostring(context:get_message("guard_response").body))
-    if verdict.verdict == "block" then
-      -- Quarantine rather than fail: the agent gets a tool error it can reason
-      -- about, exactly as the guard's MCP proxy answers today.
-      result.result = {
-        isError = true,
-        content = { { type = "text",
-          text = "Content quarantined by policy (decision " .. verdict.decision_id .. ")" } },
-      }
-      res.body = json.encode(result)
-    end
+    --
+    -- A shim over lua-modules/guard-lib/guard.lua (module "guard-lib"); see
+    -- guard-check-call-1yquu for how the module is mounted and what is
+    -- unverified. This policy owns the "inspect" action the module runs.
+    local guard = require("guard-lib/guard")
+    guard.check_result(context, { agent = "researcher" })

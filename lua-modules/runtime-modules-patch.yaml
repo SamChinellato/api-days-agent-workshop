@@ -1,0 +1,24 @@
+# Mounts the guard-lib-lua ConfigMap into the Nano runtime as the Lua module
+# "guard-lib". MOCK, for discussion.
+#
+# After publishing supplier-docs, find its Runtime and merge this in:
+#
+#   oc -n idig-system get runtimes -l managed-by=idig
+#   oc -n idig-system patch runtime <name> --type merge \
+#     --patch-file lua-modules/runtime-modules-patch.yaml
+#
+# Caveats:
+#   * The broker generates the Runtime (managed-by: idig), so the next publish
+#     from API Studio may drop this field. Studio has no field for it on a
+#     LuaScript yet (it has moduleRef only for Handlebars templates); until it
+#     does, re-apply after every publish.
+#   * The runtime caches modules per worker: after changing the ConfigMap,
+#     restart the runtime pods to pick it up.
+#   * Module names: lower-case letters, digits or '-', at most 32 characters
+#     (the Runtime CRD's validation). Inside the module, the runtime loads
+#     every .lua file under the mounted ConfigMap.
+spec:
+  modules:
+    guard-lib:
+      configMaps:
+        - name: guard-lib-lua

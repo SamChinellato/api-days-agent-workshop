@@ -14,8 +14,22 @@ spec:
     -- Filters tool calls by tool name and by argument before they reach the MCP server.
     local BLOCKED_TOOLS = { send_email = true }
     local BLOCKED_ARGUMENTS = { "supplier-05" }
+    -- body:read() can return a string, a buffer or a table, depending on earlier policies.
+    local function body_text(message)
+      local raw = message.body:read()
+      local kind = type(raw)
+      local text = raw
+      if kind == "table" then
+        text = json.encode(raw)
+      elseif kind ~= "string" then
+        local ok, value = pcall(function() return raw:tostring() end)
+        text = ok and value or tostring(raw)
+      end
+      console.warn("guard filter read a %s body of %s characters", kind, tostring(string.len(text)))
+      return text
+    end
     local request = context:get_message("request")
-    local ok, message = pcall(json.decode, tostring(request.body:read()))
+    local ok, message = pcall(json.decode, body_text(request))
     if ok and type(message) == "table" and message.method == "tools/call" then
       local params = message.params or {}
       local reason = nil

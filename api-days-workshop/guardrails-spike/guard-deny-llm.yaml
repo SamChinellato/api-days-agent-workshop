@@ -1,0 +1,17 @@
+kind: Throw
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-deny-llm
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: llm
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  error:
+    CustomError:
+      status: 403
+      messageType: variables
+      message: guard.reason

@@ -1,0 +1,41 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-mcp-filter
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  actions:
+    deny:
+      $ref: api-days-workshop:guard-deny-1yquu:1.0.0
+  source: |
+    -- Filters tool calls by tool name and by argument before they reach the MCP server.
+    local BLOCKED_TOOLS = { send_email = true }
+    local BLOCKED_ARGUMENTS = { "supplier-05" }
+    local request = context:get_message("request")
+    local ok, message = pcall(json.decode, tostring(request.body:read()))
+    if ok and type(message) == "table" and message.method == "tools/call" then
+      local params = message.params or {}
+      local reason = nil
+      if BLOCKED_TOOLS[params.name] then
+        reason = "tool " .. tostring(params.name)
+      else
+        local arguments = json.encode(params.arguments or {})
+        for _, value in ipairs(BLOCKED_ARGUMENTS) do
+          if string.find(arguments, value, 1, true) then
+            reason = "argument " .. value
+          end
+        end
+      end
+      if reason then
+        console.warn("guard-mcp-filter blocked: %s", reason)
+        context:set("guard.reason", "Blocked by the MCP filter: " .. reason)
+        context:run_action("deny")
+        return
+      end
+    end

@@ -1,0 +1,32 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-llm-filter
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: llm
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  actions:
+    deny:
+      $ref: api-days-workshop:guard-deny-llm:1.0.0
+  source: |
+    -- Stops a prompt before it reaches the model.
+    local BLOCKED = {
+      "ignore previous instructions",
+      "ignore all previous instructions",
+      "reveal your system prompt",
+    }
+    local request = context:get_message("request")
+    local text = string.lower(tostring(request.body:read()))
+    for _, phrase in ipairs(BLOCKED) do
+      if string.find(text, phrase, 1, true) then
+        console.warn("guard-llm-filter blocked a prompt: %s", phrase)
+        context:set("guard.reason", "Blocked by the LLM filter: " .. phrase)
+        context:run_action("deny")
+        return
+      end
+    end

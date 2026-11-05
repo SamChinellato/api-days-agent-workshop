@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: plan-supplier-docs-guarded
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  description: ''
+  domain: mcp
+spec:
+  qos:
+    withQuota:
+      requests:
+        - $ref: api-days-workshop:quota-1yquu:1.0.0

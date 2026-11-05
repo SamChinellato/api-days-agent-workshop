@@ -11,8 +11,8 @@ metadata:
 spec:
   title: supplier-docs-guarded
   protocolVersion: V2025_11_25
-  plan:
-    $ref: api-days-workshop:plan-supplier-docs-guarded:1.0.0
+  quota:
+    $ref: api-days-workshop:quota-1yquu:1.0.0
   policy-sequence:
     - $ref: api-days-workshop:policy-sequence-mcp-guarded:1.0.0
   capabilities:

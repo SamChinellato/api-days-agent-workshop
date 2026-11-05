@@ -621,21 +621,6 @@
       "contentHash": "bf4c72b1eae666b9"
     },
     {
-      "id": "760752e9-6aad-4a6b-984c-2baf6e7c7c93:0",
-      "projectId": "Uqc5zD4i",
-      "filePath": "api-days-workshop/guardrails-spike/mcp-plan.yml",
-      "docIndex": 0,
-      "assetType": "resource",
-      "lastIndexed": 1793919604270,
-      "schemaVersion": 1,
-      "kind": "Plan",
-      "name": "plan-supplier-docs-guarded",
-      "namespace": "api-days-workshop",
-      "version": "1.0.0",
-      "domain": "mcp",
-      "contentHash": "464e031bcd749fb2"
-    },
-    {
       "id": "376bef34-4259-409e-b9d0-7db5c3328ae3:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/mcp-sequence.yaml",
@@ -1187,18 +1172,6 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "62e7687c-9163-4789-87c9-99e5a6cafe03",
-      "projectId": "Uqc5zD4i",
-      "sourceNodeId": "760752e9-6aad-4a6b-984c-2baf6e7c7c93:0",
-      "targetNodeId": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
-      "targetRefType": "same-project",
-      "targetRefString": "api-days-workshop:quota-1yquu:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793857336763,
-      "lastValidated": 1793857338050
-    },
-    {
       "id": "225aea58-5ed7-47f0-8e01-1576b5ff766a",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "376bef34-4259-409e-b9d0-7db5c3328ae3:0",
@@ -1307,18 +1280,6 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "50984ea5-f71f-471a-9c14-6baf44b34df1",
-      "projectId": "Uqc5zD4i",
-      "sourceNodeId": "bd494def-455d-4ab1-8abf-74799950364a:0",
-      "targetNodeId": "760752e9-6aad-4a6b-984c-2baf6e7c7c93:0",
-      "targetRefType": "same-project",
-      "targetRefString": "api-days-workshop:plan-supplier-docs-guarded:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793857336763,
-      "lastValidated": 1793857338050
-    },
-    {
       "id": "c2c98c85-f487-42ed-ad7b-800084d18f57",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "bd494def-455d-4ab1-8abf-74799950364a:0",
@@ -1361,6 +1322,18 @@
       "targetNodeId": "d350808e-1b23-40ef-8a9a-b09f18a56164:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:freeflowpolicysequence-watsonx-guarded:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "ba108250-67eb-4d38-982a-03bef235d0ff",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "bd494def-455d-4ab1-8abf-74799950364a:0",
+      "targetNodeId": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:quota-1yquu:1.0.0",
       "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793857336763,

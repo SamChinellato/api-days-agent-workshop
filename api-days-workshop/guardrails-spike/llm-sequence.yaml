@@ -5,7 +5,7 @@ metadata:
   namespace: api-days-workshop
   version: 1.0.0
   tags: []
-  domain: llm
+  domain: ai-platform
   labels:
     gatewayTypes:
       - nano

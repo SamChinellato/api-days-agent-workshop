@@ -1,0 +1,15 @@
+kind: If
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-if-blocked-llm
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  condition: $variable('guard_blocked') = 'true'
+  execute:
+    - $ref: api-days-workshop:guard-deny-llm:1.0.0

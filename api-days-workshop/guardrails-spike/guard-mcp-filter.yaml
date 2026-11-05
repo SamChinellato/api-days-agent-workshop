@@ -10,9 +10,6 @@ metadata:
     gatewayTypes:
       - nano
 spec:
-  actions:
-    deny:
-      $ref: api-days-workshop:guard-deny-1yquu:1.0.0
   source: |
     -- Filters tool calls by tool name and by argument before they reach the MCP server.
     local BLOCKED_TOOLS = { send_email = true }
@@ -34,8 +31,8 @@ spec:
       end
       if reason then
         console.warn("guard-mcp-filter blocked: %s", reason)
-        context:set("guard.reason", "Blocked by the MCP filter: " .. reason)
-        context:run_action("deny")
+        context:set("guard_reason", "Blocked by the MCP filter: " .. reason)
+        context:set("guard_blocked", "true")
         return
       end
     end

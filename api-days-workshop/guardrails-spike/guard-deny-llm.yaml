@@ -14,4 +14,4 @@ spec:
     CustomError:
       status: 403
       messageType: variables
-      message: guard.reason
+      message: guard_reason

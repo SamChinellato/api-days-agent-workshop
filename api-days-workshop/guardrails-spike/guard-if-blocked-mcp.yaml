@@ -1,0 +1,15 @@
+kind: If
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-if-blocked-mcp
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  condition: $variable('guard_blocked') = 'true'
+  execute:
+    - $ref: api-days-workshop:guard-deny-mcp:1.0.0

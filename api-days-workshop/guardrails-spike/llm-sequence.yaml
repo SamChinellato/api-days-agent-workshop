@@ -17,6 +17,7 @@ spec:
     - $ref: api-days-workshop:IBMCloudLogin-8b3nv:1.0.0
     - $ref: api-days-workshop:Parse-8b3nv:1.0.0
     - $ref: api-days-workshop:guard-llm-filter:1.0.0
+    - $ref: api-days-workshop:guard-if-blocked-llm:1.0.0
     - $ref: api-days-workshop:OperationSwitch-8b3nv:1.0.0
   monitoring:
     $ref: api-days-workshop:Telemetry-8b3nv:1.0.0

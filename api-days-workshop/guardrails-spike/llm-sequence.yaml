@@ -11,6 +11,8 @@ metadata:
       - nano
 spec:
   main:
+    - $ref: api-days-workshop:guard-kill-check-llm:1.0.0
+    - $ref: api-days-workshop:guard-if-blocked-llm:1.0.0
     - $ref: api-days-workshop:ExtractIdentity-8b3nv:1.0.0
     - $ref: api-days-workshop:Authenticate-8b3nv:1.0.0
     - $ref: api-days-workshop:Authorize-8b3nv:1.0.0

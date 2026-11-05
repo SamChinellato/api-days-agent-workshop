@@ -1,0 +1,16 @@
+kind: Set
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-kill-read-mcp
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  valueType: distributedVariable
+  variable:
+    name: killswitch_state
+    value: killswitch-global

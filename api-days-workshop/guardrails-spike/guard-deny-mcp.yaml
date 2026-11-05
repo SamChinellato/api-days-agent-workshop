@@ -13,5 +13,5 @@ spec:
   error:
     CustomError:
       status: 403
-      messageType: variables
-      message: guard_reason
+      messageType: jsonata
+      message: $variable('guard_reason')

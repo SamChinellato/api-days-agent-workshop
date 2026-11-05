@@ -546,169 +546,229 @@
       "contentHash": "5948b6054d129682"
     },
     {
-      "id": "ca59f7e6-079b-43f4-82de-6552082a82e3:0",
+      "id": "0fd20f08-926f-41ec-9697-9b7154e0c7c1:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-deny-llm.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "Throw",
       "name": "guard-deny-llm",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "19c3c1d24289592f"
+      "contentHash": "fa5e7acedf6ea4dd"
     },
     {
-      "id": "675bf470-9a88-4819-90bc-89d2b8156268:0",
+      "id": "f176c338-366b-461f-8d02-7b0e753db508:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-deny-mcp.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "Throw",
       "name": "guard-deny-mcp",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "mcp",
-      "contentHash": "9ebdc5d8a9ea9447"
+      "contentHash": "87214fbb2dbc30cd"
     },
     {
-      "id": "0b4f655d-23ae-411b-8c9c-c7295cad4862:0",
+      "id": "e0828968-ecba-4783-8817-33b18fec3ad9:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-if-blocked-llm.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "If",
       "name": "guard-if-blocked-llm",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "0582929d8270b4d4"
+      "contentHash": "2aeb0f19efc13c84"
     },
     {
-      "id": "f7905e3c-57e4-4696-97bf-fa2b1214db03:0",
+      "id": "e607f222-268d-4784-a0ec-73ace044f609:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-if-blocked-mcp.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "If",
       "name": "guard-if-blocked-mcp",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "mcp",
-      "contentHash": "6455da2216792724"
+      "contentHash": "854f61bbe0aa320e"
     },
     {
-      "id": "0141f726-6f1e-4327-935f-6bf4fc6d25ee:0",
+      "id": "5b4e30e4-a689-479b-8c7e-99a70a159070:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guardrails-spike/guard-kill-check-llm.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793922580777,
+      "schemaVersion": 1,
+      "kind": "LuaScript",
+      "name": "guard-kill-check-llm",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "domain": "ai-platform",
+      "contentHash": "7768bb0bf2cd8c1c"
+    },
+    {
+      "id": "b12e4df8-1a1d-4495-a678-ba995bcd487b:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guardrails-spike/guard-kill-check-mcp.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793922580777,
+      "schemaVersion": 1,
+      "kind": "LuaScript",
+      "name": "guard-kill-check-mcp",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "domain": "mcp",
+      "contentHash": "4c06ad5e336fc2c6"
+    },
+    {
+      "id": "1e8863b7-2e0f-46b0-85d8-09520e323fc2:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guardrails-spike/guard-kill-read-llm.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793922580777,
+      "schemaVersion": 1,
+      "kind": "Set",
+      "name": "guard-kill-read-llm",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "domain": "ai-platform",
+      "contentHash": "23bd6d8bf49216da"
+    },
+    {
+      "id": "e5cf9fba-d139-4897-b778-3739450b9f96:0",
+      "projectId": "Uqc5zD4i",
+      "filePath": "api-days-workshop/guardrails-spike/guard-kill-read-mcp.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1793922580777,
+      "schemaVersion": 1,
+      "kind": "Set",
+      "name": "guard-kill-read-mcp",
+      "namespace": "api-days-workshop",
+      "version": "1.0.0",
+      "domain": "mcp",
+      "contentHash": "f12613f2629d0df9"
+    },
+    {
+      "id": "06ca04cb-5798-4d66-8392-d49f27e06ca9:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-llm-filter.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "LuaScript",
       "name": "guard-llm-filter",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "b3dad5085528b0e3"
+      "contentHash": "1eff941e5ad52291"
     },
     {
-      "id": "e569d6d7-953a-4cbe-9fb2-4191a2ea5aad:0",
+      "id": "a13352da-de81-4656-8e30-ca2cb08195c8:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/guard-mcp-filter.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "LuaScript",
       "name": "guard-mcp-filter",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "mcp",
-      "contentHash": "cab48ba278c1e75a"
+      "contentHash": "e2980191b8831ad0"
     },
     {
-      "id": "dc9d2942-5ec9-4c74-a545-b6d53e45290c:0",
+      "id": "80869293-5d31-49bf-986b-f14762a48447:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/llm-plan.yml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "Plan",
       "name": "plan-watsonx-guarded",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "699f90b550cd827c"
+      "contentHash": "69093ede8ed91983"
     },
     {
-      "id": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "id": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/llm-sequence.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "freeflowpolicysequence-watsonx-guarded",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "b9b087196ca97640"
+      "contentHash": "d01f251479a50cb2"
     },
     {
-      "id": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "id": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/mcp-sequence.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "FreeFlowPolicySequence",
       "name": "policy-sequence-mcp-guarded",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "mcp",
-      "contentHash": "763eb38a2e53d56d"
+      "contentHash": "de7e7b0fcfbcaca9"
     },
     {
-      "id": "4500450d-6292-4328-8ef0-19722ca73a07:0",
+      "id": "a242c7d5-0e3b-4b61-a9f8-1a3e5230bbd6:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/supplier-docs-guarded.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "MCPServer",
       "name": "supplier-docs-guarded",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "mcp",
-      "contentHash": "b3794f5bb165b895"
+      "contentHash": "df14e9dc82ea692d"
     },
     {
-      "id": "45635e63-c859-46ce-97e3-a4f52bb36b3c:0",
+      "id": "b4406e6d-fab3-4c5e-86d5-311affe04b0d:0",
       "projectId": "Uqc5zD4i",
       "filePath": "api-days-workshop/guardrails-spike/watsonx-guarded.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1793920921352,
+      "lastIndexed": 1793922580777,
       "schemaVersion": 1,
       "kind": "LLMProxy",
       "name": "watsonx-guarded",
       "namespace": "api-days-workshop",
       "version": "1.0.0",
       "domain": "ai-platform",
-      "contentHash": "5a0a3232e1a7b1b1"
+      "contentHash": "58847b3d1de1154e"
     }
   ],
   "edges": [
@@ -1085,10 +1145,10 @@
       "lastValidated": 1793857336762
     },
     {
-      "id": "b70c1d49-3845-44a8-b2ac-886a1e1bcdfe",
+      "id": "b44dd160-f1c0-4f2c-ad74-89eb6db4f4c0",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "0b4f655d-23ae-411b-8c9c-c7295cad4862:0",
-      "targetNodeId": "ca59f7e6-079b-43f4-82de-6552082a82e3:0",
+      "sourceNodeId": "e0828968-ecba-4783-8817-33b18fec3ad9:0",
+      "targetNodeId": "0fd20f08-926f-41ec-9697-9b7154e0c7c1:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-deny-llm:1.0.0",
       "targetRefKind": "resource",
@@ -1097,10 +1157,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "9f2be95c-0920-4350-823e-69e110f97222",
+      "id": "5b77ca34-5cb4-4a2f-a413-aae84a162fbf",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "f7905e3c-57e4-4696-97bf-fa2b1214db03:0",
-      "targetNodeId": "675bf470-9a88-4819-90bc-89d2b8156268:0",
+      "sourceNodeId": "e607f222-268d-4784-a0ec-73ace044f609:0",
+      "targetNodeId": "f176c338-366b-461f-8d02-7b0e753db508:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-deny-mcp:1.0.0",
       "targetRefKind": "resource",
@@ -1109,9 +1169,33 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "ca469bfa-225f-4df1-83d3-1e6636799c82",
+      "id": "573c74f0-3b80-4b59-933a-0be6cdceade3",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "dc9d2942-5ec9-4c74-a545-b6d53e45290c:0",
+      "sourceNodeId": "5b4e30e4-a689-479b-8c7e-99a70a159070:0",
+      "targetNodeId": "1e8863b7-2e0f-46b0-85d8-09520e323fc2:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-kill-read-llm:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "ae9dda6f-18c6-445d-ad60-a03f2d00f15b",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "b12e4df8-1a1d-4495-a678-ba995bcd487b:0",
+      "targetNodeId": "e5cf9fba-d139-4897-b778-3739450b9f96:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-kill-read-mcp:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "3f4911df-dfda-46bd-8b14-f600bfeb11a5",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "80869293-5d31-49bf-986b-f14762a48447:0",
       "targetNodeId": "62d0d548-5d87-4072-8123-2ca86894240c:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:watsonx-token-weighted-8b3nv:1.0.0",
@@ -1121,9 +1205,33 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "d79cf528-fa4e-4cc8-a8d3-ba5d0990dac7",
+      "id": "eaf81315-35d7-4e5b-807a-072fc545a2fa",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
+      "targetNodeId": "5b4e30e4-a689-479b-8c7e-99a70a159070:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-kill-check-llm:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "882d2362-c349-4a90-97ef-784c2bb18de4",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
+      "targetNodeId": "e0828968-ecba-4783-8817-33b18fec3ad9:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-if-blocked-llm:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "9fdcf0a5-c68c-4ce0-b78f-cd6ad5b912f7",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "c8b6a80f-5b4d-43f2-b394-9443e87e4221:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:ExtractIdentity-8b3nv:1.0.0",
@@ -1133,9 +1241,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "8a5d4000-ea8e-4a5a-a821-48a62c0f0be7",
+      "id": "ca7b7393-b421-4264-ada5-d1758435a0a8",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "fc9350c0-1e1d-4665-b5f0-d641005f8a15:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Authenticate-8b3nv:1.0.0",
@@ -1145,9 +1253,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "b220f96f-31ba-4455-afe2-b6dea7d93cc9",
+      "id": "0b7e81c0-9946-4344-b5c4-2b40258cc409",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "ce760891-1f2d-4fc3-9f2e-b0b7d1c44a09:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Authorize-8b3nv:1.0.0",
@@ -1157,9 +1265,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "8b1bd80b-ea03-4e49-8f56-7b5734bfb0bf",
+      "id": "3da0d255-23a6-414b-a087-ae22da1c635f",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "ea43251b-7c29-4a0a-afbd-44d9c13f8f4b:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:IBMCloudLogin-8b3nv:1.0.0",
@@ -1169,9 +1277,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "fbedd1e5-4e15-4fe2-a54c-4b039e698452",
+      "id": "78178777-8a3a-42ff-853b-e3b1fe211887",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "dc48bdcb-329b-4eb4-9a6e-9163be577379:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Parse-8b3nv:1.0.0",
@@ -1181,10 +1289,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "9eac57ee-8ea1-403e-94e6-6ecbafb1e961",
+      "id": "4544db90-c90f-4675-bb5f-e6c679f10e58",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
-      "targetNodeId": "0141f726-6f1e-4327-935f-6bf4fc6d25ee:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
+      "targetNodeId": "06ca04cb-5798-4d66-8392-d49f27e06ca9:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-llm-filter:1.0.0",
       "targetRefKind": "resource",
@@ -1193,10 +1301,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "f887c137-c013-44da-9344-3f17904868be",
+      "id": "51b6137f-a948-43ad-bfc5-1d68a21f5a4b",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
-      "targetNodeId": "0b4f655d-23ae-411b-8c9c-c7295cad4862:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
+      "targetNodeId": "e0828968-ecba-4783-8817-33b18fec3ad9:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-if-blocked-llm:1.0.0",
       "targetRefKind": "resource",
@@ -1205,9 +1313,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "4f0b8ff0-d916-48dc-bd68-fc06b5841196",
+      "id": "862b7751-8f4c-491d-865f-cbb34dbbe5a9",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "9bc7f0a4-9da2-43c0-bcfb-bfd5b4c58e03:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:OperationSwitch-8b3nv:1.0.0",
@@ -1217,9 +1325,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "70e07e80-479e-4aef-ba15-725055207026",
+      "id": "86adc608-9735-40c5-942b-d23de0bb80d2",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetNodeId": "b15f407c-e0ae-48e8-aa2d-af4a54415f7b:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Telemetry-8b3nv:1.0.0",
@@ -1229,9 +1337,33 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "6a0e9b1c-5221-49e0-bf0f-d5884d0b5ced",
+      "id": "16265881-31e9-4a4c-88e6-9f44eec2d559",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
+      "targetNodeId": "b12e4df8-1a1d-4495-a678-ba995bcd487b:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-kill-check-mcp:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "18cc134a-c569-4480-8b92-840a32fa6a95",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
+      "targetNodeId": "e607f222-268d-4784-a0ec-73ace044f609:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-if-blocked-mcp:1.0.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "d87a73f2-bed7-4def-868b-d0af744f4224",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "c8b6a80f-5b4d-43f2-b394-9443e87e4221:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:ExtractIdentity-8b3nv:1.0.0",
@@ -1241,9 +1373,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "08be3b3f-c1f2-4542-8f2d-cefd3bb69586",
+      "id": "8642c920-b72b-4f83-89ca-60c54d030e3c",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "fc9350c0-1e1d-4665-b5f0-d641005f8a15:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Authenticate-8b3nv:1.0.0",
@@ -1253,9 +1385,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "ecfa3ee5-5708-4742-8932-514fbfd53870",
+      "id": "dd98f6f8-a985-42da-9946-9818f2ff6afc",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "ce760891-1f2d-4fc3-9f2e-b0b7d1c44a09:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Authorize-8b3nv:1.0.0",
@@ -1265,9 +1397,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "364ee78f-d3e7-4e05-a655-6c6c6762d345",
+      "id": "3e17aa5a-6f52-4180-b7fe-a4ccaeb5e1c8",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "dc48bdcb-329b-4eb4-9a6e-9163be577379:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:Parse-8b3nv:1.0.0",
@@ -1277,10 +1409,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "a8158485-5c13-4cc8-9ea8-33c0779efa5c",
+      "id": "64d21a5b-9868-4a59-b19c-6cbbfee51f4a",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
-      "targetNodeId": "e569d6d7-953a-4cbe-9fb2-4191a2ea5aad:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
+      "targetNodeId": "a13352da-de81-4656-8e30-ca2cb08195c8:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-mcp-filter:1.0.0",
       "targetRefKind": "resource",
@@ -1289,10 +1421,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "67b06ea6-a7ac-411f-ae2b-9440b358d22a",
+      "id": "aedf3d59-611a-429a-9237-6aa65dfba0ef",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
-      "targetNodeId": "f7905e3c-57e4-4696-97bf-fa2b1214db03:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
+      "targetNodeId": "e607f222-268d-4784-a0ec-73ace044f609:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-if-blocked-mcp:1.0.0",
       "targetRefKind": "resource",
@@ -1301,9 +1433,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "07eb16dd-f23e-4f15-a7a5-85bd8b9632be",
+      "id": "2f76c307-8cae-425b-bd03-b92352abb4d0",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "b89fefc2-b712-4481-b51e-2dbd5bb632bb:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:remove-caller-auth-1yquu:1.0.0",
@@ -1313,9 +1445,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "353d72c2-518c-4dd6-b392-53263c922498",
+      "id": "ea2037fd-2a05-4a33-93f6-20d09ab3b174",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "430e8a9c-1d40-4040-8150-40ee864f3039:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:set-apikey-1yquu:1.0.0",
@@ -1325,9 +1457,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "87f86e0c-916c-4a06-97a6-8d76dd2d6001",
+      "id": "4dbbadee-6242-4bcd-bb08-185665ca7c1e",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "4a1938d1-5ad6-4c14-9725-5e4e72ca85e3:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:mcp-invoke-1yquu:1.0.0",
@@ -1337,9 +1469,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "6627357d-f660-4ac1-87d1-efb80eda6529",
+      "id": "2ac1bb14-b9b4-476a-9240-6030213633d4",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetNodeId": "e9d47ca0-1678-4106-a450-4b030493153f:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:telemetry-1yquu:1.0.0",
@@ -1349,9 +1481,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "3f918a8b-cc2c-4afd-af99-e9a3aff9a7f4",
+      "id": "7fa136ee-0527-4423-b2f6-4e80f5fc551b",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "4500450d-6292-4328-8ef0-19722ca73a07:0",
+      "sourceNodeId": "a242c7d5-0e3b-4b61-a9f8-1a3e5230bbd6:0",
       "targetNodeId": "d1b2e89c-76d7-4e6b-b498-abb938409805:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:quota-1yquu:1.0.0",
@@ -1361,10 +1493,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "f003ea21-8ce8-48ce-ae52-5a3c6897be8a",
+      "id": "777f4954-a588-4473-93ea-1261afe7f440",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "4500450d-6292-4328-8ef0-19722ca73a07:0",
-      "targetNodeId": "cd6a1a70-dac6-48fb-9145-43b7ea5c5c7b:0",
+      "sourceNodeId": "a242c7d5-0e3b-4b61-a9f8-1a3e5230bbd6:0",
+      "targetNodeId": "c1cae308-bb2d-4f76-ad3c-e44e1dd398c5:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:policy-sequence-mcp-guarded:1.0.0",
       "targetRefKind": "resource",
@@ -1373,9 +1505,9 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "97ceb30b-4713-41ce-a7d1-5d09f021627c",
+      "id": "5638eab3-a2cb-4df4-8ca9-118aeaffd2f7",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "4500450d-6292-4328-8ef0-19722ca73a07:0",
+      "sourceNodeId": "a242c7d5-0e3b-4b61-a9f8-1a3e5230bbd6:0",
       "targetNodeId": "9593fad5-e0bc-40a1-be3b-08057bcd48d2:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:supplier-docs-tool-1yquu:1.0.0",
@@ -1385,10 +1517,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "9912eeb6-9d5d-4f99-bd38-392ba0761c03",
+      "id": "2aefd536-4bab-4c45-83d0-2201d33efba0",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "45635e63-c859-46ce-97e3-a4f52bb36b3c:0",
-      "targetNodeId": "dc9d2942-5ec9-4c74-a545-b6d53e45290c:0",
+      "sourceNodeId": "b4406e6d-fab3-4c5e-86d5-311affe04b0d:0",
+      "targetNodeId": "80869293-5d31-49bf-986b-f14762a48447:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:plan-watsonx-guarded:1.0.0",
       "targetRefKind": "resource",
@@ -1397,10 +1529,10 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "b724ad03-22bf-412d-8945-6606708104d6",
+      "id": "fb716b74-0e94-4447-aeba-05b57a80cdbe",
       "projectId": "Uqc5zD4i",
-      "sourceNodeId": "45635e63-c859-46ce-97e3-a4f52bb36b3c:0",
-      "targetNodeId": "7f83139a-022c-44c2-bd0b-ecb452cbc588:0",
+      "sourceNodeId": "b4406e6d-fab3-4c5e-86d5-311affe04b0d:0",
+      "targetNodeId": "41fc82e9-d39b-4949-8805-00831791954a:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:freeflowpolicysequence-watsonx-guarded:1.0.0",
       "targetRefKind": "resource",

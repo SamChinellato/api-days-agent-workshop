@@ -1,0 +1,27 @@
+kind: LuaScript
+apiVersion: api.ibm.com/v1
+metadata:
+  name: guard-circuit-breaker-check-mcp
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  actions:
+    read:
+      $ref: api-days-workshop:guard-circuit-breaker-read-mcp:1.0.0
+  source: |
+    -- The circuit breaker. Reads a flag shared across every gateway runtime, so opening
+    -- it needs no republish. It fails closed to traffic: if the flag cannot be read, the
+    -- request stops. Traffic only flows when the state is "closed".
+    local ok = pcall(function() context:run_action("read") end)
+    local state = ok and context:get("circuit_breaker_state") or nil
+    if state ~= "closed" then
+      local why = state == "open" and "open" or "state unavailable"
+      console.warn("guard-circuit-breaker blocked a request: %s", why)
+      context:set("guard_reason", "Circuit breaker: " .. why)
+      context:set("guard_blocked", "true")
+    end

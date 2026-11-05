@@ -1,7 +1,7 @@
 kind: Set
 apiVersion: api.ibm.com/v1
 metadata:
-  name: guard-kill-read-llm
+  name: guard-circuit-breaker-read-llm
   namespace: api-days-workshop
   version: 1.0.0
   tags: []
@@ -12,5 +12,5 @@ metadata:
 spec:
   valueType: distributedVariable
   variable:
-    name: killswitch_state
-    value: killswitch-global
+    name: circuit_breaker_state
+    value: circuit-breaker-global

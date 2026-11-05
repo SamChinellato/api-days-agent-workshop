@@ -1,0 +1,14 @@
+kind: IBMCloudLogin
+apiVersion: api.ibm.com/v1
+metadata:
+  name: IBMCloudLogin-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  apiKeySecret: apikey-secret
+  tlsClientProfile: sample-tls-client-profile:1.0.0

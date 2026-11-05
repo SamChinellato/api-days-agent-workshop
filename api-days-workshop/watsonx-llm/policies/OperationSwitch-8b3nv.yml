@@ -1,0 +1,43 @@
+kind: OperationSwitch
+apiVersion: api.ibm.com/v1
+metadata:
+  name: OperationSwitch-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  cases:
+    - conditions:
+        - verbPath:
+            path: /deployment-models
+            verb: GET
+      execute:
+        - $ref: api-days-workshop:WatsonxModels-8b3nv:1.0.0
+    - conditions:
+        - verbPath:
+            path: /text-chat
+            verb: POST
+      execute:
+        - $ref: api-days-workshop:WatsonxTextChat-8b3nv:1.0.0
+    - conditions:
+        - verbPath:
+            path: /text-generate
+            verb: POST
+      execute:
+        - $ref: api-days-workshop:WatsonxTextGen-8b3nv:1.0.0
+    - conditions:
+        - verbPath:
+            path: /tokenize
+            verb: POST
+      execute:
+        - $ref: api-days-workshop:WatsonxTokenize-8b3nv:1.0.0
+    - conditions:
+        - verbPath:
+            path: /embeddings
+            verb: POST
+      execute:
+        - $ref: api-days-workshop:WatsonxEmbeddings-8b3nv:1.0.0

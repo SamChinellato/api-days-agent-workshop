@@ -1,0 +1,28 @@
+kind: Telemetry
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Telemetry-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  verbosity:
+    - level: basic
+      onSuccessTrimTo: normal
+      inboundLevel: basic
+      outboundLevel: basic
+      operations:
+        - path: /deployment-models
+          method: GET
+        - path: /text-chat
+          method: POST
+        - path: /text-generate
+          method: POST
+        - path: /tokenize
+          method: POST
+        - path: /embeddings
+          method: POST

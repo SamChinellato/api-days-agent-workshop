@@ -1,0 +1,15 @@
+kind: Watsonx
+apiVersion: api.ibm.com/v1
+metadata:
+  name: WatsonxTextChat-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  tlsClientProfile: sample-tls-client-profile:1.0.0
+  operation:
+    textChat: {}

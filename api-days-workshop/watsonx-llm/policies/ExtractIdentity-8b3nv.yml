@@ -1,0 +1,21 @@
+kind: ExtractIdentity
+apiVersion: api.ibm.com/v1
+metadata:
+  name: ExtractIdentity-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  credentialType:
+    apiKey:
+      clientId:
+        httpHeader:
+          name: X-IBM-Client-Id
+      clientSecret:
+        httpHeader:
+          name: X-IBM-Client-Secret
+  namespace: client

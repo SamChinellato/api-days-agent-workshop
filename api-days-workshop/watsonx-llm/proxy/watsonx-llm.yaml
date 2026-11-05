@@ -1,0 +1,24 @@
+kind: LLMProxy
+apiVersion: api.ibm.com/v1
+metadata:
+  name: watsonx-llm
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  labels:
+    gatewayTypes:
+      - nano
+  domain: ai-platform
+  description: ""
+spec:
+  title: watsonx-llm
+  providers:
+    - api-days-workshop:watsonx:1.0.0
+  providerType: watsonx
+  basePath: /
+  selectedModels:
+    - meta-llama/llama-3-3-70b-instruct
+  plan:
+    $ref: api-days-workshop:plan-watsonx-llm-8b3nv:1.0.0
+  policy-sequence:
+    - $ref: api-days-workshop:freeflowpolicysequence-watsonx-llm-8b3nv:1.0.0

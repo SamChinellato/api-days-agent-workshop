@@ -13,6 +13,7 @@ spec:
   main:
     - $ref: api-days-workshop:remove-caller-auth-1yquu:1.0.0
     - $ref: api-days-workshop:set-apikey-1yquu:1.0.0
-    - $ref: api-days-workshop:retry-docs-1yquu:1.0.0   # retry → cache → mcp-invoke
+    - $ref: api-days-workshop:mcp-invoke-1yquu:1.0.0
   monitoring:
     $ref: api-days-workshop:telemetry-1yquu:1.0.0
+

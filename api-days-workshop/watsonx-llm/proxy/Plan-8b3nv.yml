@@ -1,0 +1,14 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: plan-watsonx-llm-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  description: ''
+  domain: ai-platform
+spec:
+  qos:
+    withQuota:
+      watsonx-token-weighted:
+        - $ref: api-days-workshop:watsonx-token-weighted-8b3nv:1.0.0

@@ -1,0 +1,15 @@
+kind: Parse
+apiVersion: api.ibm.com/v1
+metadata:
+  name: Parse-8b3nv
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: ai-platform
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  documentType:
+    json: {}
+  input: request

@@ -15,11 +15,17 @@ spec:
       title: list_records
       description: "List the supplier records: id, name, status, notes, and who last changed each."
       inputSchema: {"properties": {}, "type": "object", "title": "list_recordsArguments"}
+      policy-sequence:
+        - $ref: api-days-workshop:policy-sequence-records-read:1.0.0
     - name: list_contacts
       title: list_contacts
       description: "List supplier contacts: id, supplier, name, role, email and phone. Give supplier (a supplier's name, e.g. Northwind, or id) for one supplier's contacts, or leave it empty for all."
       inputSchema: {"properties": {"supplier": {"default": "", "title": "Supplier", "type": "string"}}, "type": "object", "title": "list_contactsArguments"}
+      policy-sequence:
+        - $ref: api-days-workshop:policy-sequence-records-read:1.0.0
     - name: update_contact
       title: update_contact
       description: "Change a supplier contact's details. contact is the person's name (e.g. Priya Raman) or contact id; fields may hold name, role, email and phone, e.g. {\"email\": \"new@example.demo.local\"}. Returns the changed contact and that supplier's contacts."
       inputSchema: {"properties": {"contact": {"title": "Contact", "type": "string"}, "fields": {"additionalProperties": true, "title": "Fields", "type": "object"}}, "required": ["contact", "fields"], "type": "object", "title": "update_contactArguments"}
+      policy-sequence:
+        - $ref: api-days-workshop:policy-sequence-records-write:1.0.0

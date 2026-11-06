@@ -882,30 +882,6 @@
       "lastValidated": 1793857338050
     },
     {
-      "id": "07b3904f-febc-401c-b136-2e314f73ab52",
-      "projectId": "Uqc5zD4i",
-      "sourceNodeId": "2c05a1f7-3a39-4e5f-992c-e1a34937a8be:0",
-      "targetNodeId": "046e310a-f6c3-4081-929b-36ec26258710:0",
-      "targetRefType": "same-project",
-      "targetRefString": "api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793857336763,
-      "lastValidated": 1793857338050
-    },
-    {
-      "id": "61653eae-49d4-454e-988a-ccd442730fac",
-      "projectId": "Uqc5zD4i",
-      "sourceNodeId": "2c05a1f7-3a39-4e5f-992c-e1a34937a8be:0",
-      "targetNodeId": "e8056c00-ded2-4957-bf99-ed4d703bdc10:0",
-      "targetRefType": "same-project",
-      "targetRefString": "api-days-workshop:guard-if-blocked-mcp:1.0.0",
-      "targetRefKind": "resource",
-      "isValid": true,
-      "createdAt": 1793857336763,
-      "lastValidated": 1793857338050
-    },
-    {
       "id": "26887b86-5826-4ab7-92c2-7b36b8a21838",
       "projectId": "Uqc5zD4i",
       "sourceNodeId": "2c05a1f7-3a39-4e5f-992c-e1a34937a8be:0",
@@ -1081,6 +1057,30 @@
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:freeflowpolicysequence-watsonx-guarded:1.0.0",
       "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "4913cb3e-db94-4a14-8cf1-98e64a6beddc",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "00e66b69-9556-48df-b910-0c90eb76ee8c:0",
+      "targetNodeId": "046e310a-f6c3-4081-929b-36ec26258710:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0",
+      "targetRefKind": "LuaScript",
+      "isValid": true,
+      "createdAt": 1793857336763,
+      "lastValidated": 1793857338050
+    },
+    {
+      "id": "e81fbde6-fcb1-49d9-b04d-cb5116d38c89",
+      "projectId": "Uqc5zD4i",
+      "sourceNodeId": "24b6e81d-5090-4e82-afa3-d6d8bb33cb19:0",
+      "targetNodeId": "046e310a-f6c3-4081-929b-36ec26258710:0",
+      "targetRefType": "same-project",
+      "targetRefString": "api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0",
+      "targetRefKind": "LuaScript",
       "isValid": true,
       "createdAt": 1793857336763,
       "lastValidated": 1793857338050

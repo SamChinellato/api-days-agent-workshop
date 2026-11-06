@@ -11,6 +11,8 @@ metadata:
       - nano
 spec:
   main:
+    - $ref: api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0
+    - $ref: api-days-workshop:guard-if-blocked-mcp:1.0.0
     - $ref: api-days-workshop:records-allow-readers:1.0.0
     - $ref: api-days-workshop:guard-if-blocked-mcp:1.0.0
     - $ref: api-days-workshop:remove-caller-auth-1yquu:1.0.0

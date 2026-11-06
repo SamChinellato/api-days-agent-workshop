@@ -1068,7 +1068,7 @@
       "targetNodeId": "046e310a-f6c3-4081-929b-36ec26258710:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0",
-      "targetRefKind": "LuaScript",
+      "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793857336763,
       "lastValidated": 1793857338050
@@ -1080,7 +1080,7 @@
       "targetNodeId": "046e310a-f6c3-4081-929b-36ec26258710:0",
       "targetRefType": "same-project",
       "targetRefString": "api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0",
-      "targetRefKind": "LuaScript",
+      "targetRefKind": "resource",
       "isValid": true,
       "createdAt": 1793857336763,
       "lastValidated": 1793857338050

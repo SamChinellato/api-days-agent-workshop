@@ -1,0 +1,25 @@
+kind: MCPInvoke
+apiVersion: api.ibm.com/v1
+metadata:
+  name: records-mcp-invoke
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  input: request
+  endpoint:
+    httpSse:
+      serverUrl:
+        plain:
+          value: http://mcp-actions.aigw-ai.svc.cluster.local:8000/mcp
+      timeout: 30
+    primitive:
+      tool:
+        name:
+          plain:
+            value: tool_name
+        output: response

@@ -1,0 +1,18 @@
+kind: Authenticate
+apiVersion: api.ibm.com/v1
+metadata:
+  name: records-authenticate
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  namespace: person
+  operation:
+    jwt:
+      providers:
+        - verify-jwt
+      issClaim: https://samcverify.verify.ibm.com/oauth2

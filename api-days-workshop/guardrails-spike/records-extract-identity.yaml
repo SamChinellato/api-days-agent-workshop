@@ -1,0 +1,17 @@
+kind: ExtractIdentity
+apiVersion: api.ibm.com/v1
+metadata:
+  name: records-extract-identity
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  credentialType:
+    jwt:
+      httpHeader:
+        name: Authorization
+  namespace: person

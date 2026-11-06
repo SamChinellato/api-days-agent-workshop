@@ -1,0 +1,15 @@
+kind: Parse
+apiVersion: api.ibm.com/v1
+metadata:
+  name: records-parse
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  documentType:
+    json: {}
+  input: request

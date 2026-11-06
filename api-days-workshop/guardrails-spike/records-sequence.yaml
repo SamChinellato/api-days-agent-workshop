@@ -1,0 +1,24 @@
+kind: FreeFlowPolicySequence
+apiVersion: api.ibm.com/v1
+metadata:
+  name: policy-sequence-records
+  namespace: api-days-workshop
+  version: 1.0.0
+  tags: []
+  domain: mcp
+  labels:
+    gatewayTypes:
+      - nano
+spec:
+  main:
+    - $ref: api-days-workshop:guard-circuit-breaker-check-mcp:1.0.0
+    - $ref: api-days-workshop:guard-if-blocked-mcp:1.0.0
+    - $ref: api-days-workshop:records-extract-identity:1.0.0
+    - $ref: api-days-workshop:records-authenticate:1.0.0
+    - $ref: api-days-workshop:records-parse:1.0.0
+    - $ref: api-days-workshop:records-identity-check:1.0.0
+    - $ref: api-days-workshop:guard-if-blocked-mcp:1.0.0
+    - $ref: api-days-workshop:remove-caller-auth-1yquu:1.0.0
+    - $ref: api-days-workshop:records-mcp-invoke:1.0.0
+  monitoring:
+    $ref: api-days-workshop:telemetry-1yquu:1.0.0

@@ -15,4 +15,3 @@ spec:
     jwt:
       providers:
         - verify-jwt
-      issClaim: https://samcverify.verify.ibm.com/oauth2
